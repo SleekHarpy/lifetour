@@ -1,0 +1,100 @@
+.main-header {
+  margin: 0 auto;
+  padding-top: 43px;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  max-width: $desktop-max-width;
+
+  background-color: $background-color;
+  background-image: url("../img/background-ad-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.main-header__toggle {
+  display: none;
+}
+
+@media (max-width: $tablet-max-width) {
+  .main-header {
+    padding-top: 36px;
+    padding-left: 109px;
+    padding-right: 112px;
+  }
+
+  .main-header__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__toggle {
+    position: relative;
+    margin-top: 10px;
+
+    display: block;
+    width: 23px;
+    height: 16px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 24px;
+      height: 2px;
+
+      background-color: $main-color;
+      box-shadow: 0 14px 0 0 $main-color;
+
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      top: 7px;
+      left: 0;
+
+      display: block;
+      width: 15px;
+      height: 2px;
+
+      background-color: $main-color;
+
+      content: "";
+    }
+  }
+}
+
+@media (max-width: $tablet-min-width) {
+  .main-header {
+    background-image: url("../img/background-ad-tablet@1x.jpg");
+    background-size: auto;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .main-header {
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-header__toggle {
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: $mobile-min-width) {
+  .main-header {
+    background-image: url("../img/background-ad-mobile@1x.jpg");
+    background-size: auto;
+  }
+}

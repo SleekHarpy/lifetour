@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Описание страницы">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-300.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-regular.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-500.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-700.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-800.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-900.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-300.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-regular.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-500.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-700.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-800.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-900.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
@@ -69,24 +69,30 @@
     </div>
 
     <header class="main-header">
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="main-navigation">
-        <a class="main-navigation__logo">
-          <img src="img/logo-desktop.svg" alt="Логотип Lifetour">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">Туры</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">Обучение</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">О нас</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">Отзывы</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">Фотографии</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">Контакты</a></li>
-        </ul>
-        <a class="main-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
-      </nav>
-    </header>
+      <div class="main-header__top">
+        <div class="main-header__toggle-cont">
+          <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="main-navigation">
+          <a class="main-navigation__logo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+              <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-desktop.svg" alt="Логотип Lifetour">
+            </picture>
 
-    <main>
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Туры</a></li>
+            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Обучение</a></li>
+            <li class="site-navigation__item"><a href="#" class="site-navigation__link">О нас</a></li>
+            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Отзывы</a></li>
+            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Фотографии</a></li>
+            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Контакты</a></li>
+          </ul>
+          <a class="main-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
+        </nav>
+      </div>
       <section class="advertisement">
         <div class="advertisement__wrapper">
           <h1>Походы в горы России</h1>
@@ -95,24 +101,24 @@
           </p>
           <a class="advertisement__button" href="#">Выбрать экскурсию</a>
           <ul class="social-list">
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
+            <li class="social-list__item social-list__item--vk">
+              <a href="#" class="social-list__link">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg class="instructors__svg-icon" width="12" height="6">
+                <svg class="instructors__svg-icon" width="12" height="7">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg class="instructors__svg-icon" width="5" height="10">
+                <svg class="instructors__svg-icon" width="6" height="11">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
                 <span class="visually-hidden">Инстаграм</span>
                 <svg class="instructors__svg-icon" width="13" height="13">
                   <use xlink:href="#icon-inst"></use>
@@ -122,6 +128,9 @@
           </ul>
         </div>
       </section>
+    </header>
+
+    <main>
 
       <section class="tours">
         <h2>Ближайшие туры</h2>
@@ -131,7 +140,15 @@
         </div>
         <ul class="tours__list">
           <li class="tours__item">
-            <img src="img/tour-image1-desktop@1x.jpg" width="385" height="412" alt="Тур в Кавказ">
+            <picture>
+              <!-- 1х: 281px; 2x: 562px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.webp">
+              <source type="image/webp" srcset="img/tour-image1-desktop@1x.webp">
+
+              <!-- 1х: 385px; 2x: 770px -->
+              <source media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.jpg">
+              <img src="img/tour-image1-desktop@1x.jpg" alt="Тур в Кавказ">
+            </picture>
             <div class="tours__item-wrapper">
               <div class="tours__notes">
                 <a href="#" class="tours__location">Кавказ</a>
@@ -162,7 +179,15 @@
             </div>
           </li>
           <li class="tours__item">
-            <img src="img/tour-image2-desktop@1x.jpg" width="385" height="412" alt="Тур в Алтай">
+            <picture>
+              <!-- 1х: 281px; 2x: 562px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.webp">
+              <source type="image/webp" srcset="img/tour-image2-desktop@1x.webp">
+
+              <!-- 1х: 385px; 2x: 770px -->
+              <source media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.jpg">
+              <img src="img/tour-image2-desktop@1x.jpg" alt="Тур в Алтай">
+            </picture>
             <div class="tours__item-wrapper">
               <div class="tours__notes">
                 <a href="#" class="tours__location">Алтай</a>
@@ -193,7 +218,15 @@
             </div>
           </li>
           <li class="tours__item">
-            <img src="img/tour-image3-desktop@1x.jpg" width="385" height="412" alt="Тур в Адыгею">
+            <picture>
+              <!-- 1х: 281px; 2x: 562px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.webp">
+              <source type="image/webp" srcset="img/tour-image3-desktop@1x.webp">
+
+              <!-- 1х: 385px; 2x: 770px -->
+              <source media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.jpg">
+              <img src="img/tour-image3-desktop@1x.jpg" alt="Тур в Адыгею">
+            </picture>
             <div class="tours__item-wrapper">
               <div class="tours__notes">
                 <a href="#" class="tours__location">Адыгея</a>
