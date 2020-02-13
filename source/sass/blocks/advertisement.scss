@@ -166,6 +166,8 @@
   .advertisement {
     padding-top: 62px;
     padding-bottom: 25px;
+
+    min-width: $mobile-min-width;
   }
 
   .advertisement h1 {
