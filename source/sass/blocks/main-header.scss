@@ -1,16 +1,18 @@
 .main-header {
+  background-color: $background-color;
+  background-image: url("../img/облака.png"), url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, 0 2px;
+  background-size: contain, cover;
+}
+
+.main-header__wrapper {
   margin: 0 auto;
   padding-top: 43px;
   padding-left: 120px;
   padding-right: 120px;
 
   max-width: $desktop-max-width;
-
-  background-color: $background-color;
-  background-image: url("../img/background-ad-desktop@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 
 .main-header__toggle {
@@ -18,7 +20,7 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .main-header {
+  .main-header__wrapper {
     padding-top: 36px;
     padding-left: 109px;
     padding-right: 112px;
@@ -76,12 +78,13 @@
 @media (max-width: $tablet-min-width) {
   .main-header {
     background-image: url("../img/background-ad-tablet@1x.jpg");
+    background-position: top;
     background-size: auto;
   }
 }
 
 @media (max-width: $mobile-max-width) {
-  .main-header {
+  .main-header__wrapper {
     padding-top: 13px;
     padding-left: 20px;
     padding-right: 20px;

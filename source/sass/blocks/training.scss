@@ -1,0 +1,32 @@
+.training {
+  margin: 0 auto;
+  padding-top: 76px;
+  padding-left: 122px;
+
+  max-width: $desktop-max-width;
+
+  font-family: $main-font-family;
+  font-style: normal;
+}
+
+.training h2 {
+  margin-bottom: 26px;
+
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  color: $secondary-color;
+}
+
+.training p {
+  margin-bottom: 58px;
+  padding-left: 2px;
+
+  max-width: 825px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: $text-color;
+}

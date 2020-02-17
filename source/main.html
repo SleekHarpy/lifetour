@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Lifetour</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Описание страницы">
@@ -14,6 +14,7 @@
     <link rel="preload" href="fonts/montserrat-v14-cyrillic-700.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-v14-cyrillic-800.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-v14-cyrillic-900.woff2" as="font">
+
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
@@ -24,207 +25,226 @@
     </div>
 
     <header class="main-header">
-      <div class="main-header__top">
-        <div class="main-header__toggle-cont">
-          <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-header__wrapper">
+        <div class="main-header__top">
+          <div class="main-header__toggle-cont">
+            <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <nav class="main-navigation">
+            <a class="main-navigation__logo">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+                <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-desktop.svg" alt="Логотип Lifetour">
+              </picture>
+            </a>
+            <ul class="site-navigation">
+              <li class="site-navigation__item"><a href="#" class="site-navigation__link">Туры</a></li>
+              <li class="site-navigation__item"><a href="#" class="site-navigation__link">Обучение</a></li>
+              <li class="site-navigation__item"><a href="#" class="site-navigation__link">О нас</a></li>
+              <li class="site-navigation__item"><a href="#" class="site-navigation__link">Отзывы</a></li>
+              <li class="site-navigation__item"><a href="#" class="site-navigation__link">Фотографии</a></li>
+              <li class="site-navigation__item"><a href="#" class="site-navigation__link">Контакты</a></li>
+            </ul>
+            <a class="main-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
+          </nav>
         </div>
-        <nav class="main-navigation">
-          <a class="main-navigation__logo">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-              <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-desktop.svg" alt="Логотип Lifetour">
-            </picture>
-
-          </a>
-          <ul class="site-navigation">
-            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Туры</a></li>
-            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Обучение</a></li>
-            <li class="site-navigation__item"><a href="#" class="site-navigation__link">О нас</a></li>
-            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Отзывы</a></li>
-            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Фотографии</a></li>
-            <li class="site-navigation__item"><a href="#" class="site-navigation__link">Контакты</a></li>
-          </ul>
-          <a class="main-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
-        </nav>
+        <section class="advertisement">
+          <div class="advertisement__wrapper">
+            <h1 data-bg-ad="Trekking">Походы в горы России</h1>
+            <p>
+              Профессионально организовываем экскурсии на самые красивые вершины страны
+            </p>
+            <a class="advertisement__button" href="#">Выбрать экскурсию</a>
+            <ul class="social-list">
+              <li class="social-list__item social-list__item--vk">
+                <a href="#" class="social-list__link">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="instructors__svg-icon" width="12" height="7">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg class="instructors__svg-icon" width="6" height="11">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <svg class="instructors__svg-icon" width="13" height="13">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-      <section class="advertisement">
-        <div class="advertisement__wrapper">
-          <h1>Походы в горы России</h1>
-          <p>
-            Профессионально организовываем экскурсии на самые красивые вершины страны
-          </p>
-          <a class="advertisement__button" href="#">Выбрать экскурсию</a>
-          <ul class="social-list">
-            <li class="social-list__item social-list__item--vk">
-              <a href="#" class="social-list__link">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg class="instructors__svg-icon" width="12" height="7">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg class="instructors__svg-icon" width="6" height="11">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">
-                <span class="visually-hidden">Инстаграм</span>
-                <svg class="instructors__svg-icon" width="13" height="13">
-                  <use xlink:href="#icon-inst"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
     </header>
 
     <main>
 
       <section class="tours">
-        <h2>Ближайшие туры</h2>
-        <div class="tours__pagination">
-          <button class="tours__pagination-button" type="button"><span class="visually-hidden">Влево</span></button>
-          <button class="tours__pagination-button" type="button"><span class="visually-hidden">Вправо</span></button>
+        <div class="tours__cont-pag">
+          <h2 data-bg-tours="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__pagination">
+            <button class="swiper-button-prev tours__pagination-button tours__pagination-button--prev" type="button"><span class="visually-hidden">Влево</span></button>
+            <button class="swiper-button-next tours__pagination-button tours__pagination-button--next" type="button"><span class="visually-hidden">Вправо</span></button>
+          </div>
         </div>
-        <ul class="tours__list">
-          <li class="tours__item">
-            <picture>
-              <!-- 1х: 281px; 2x: 562px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.webp">
-              <source type="image/webp" srcset="img/tour-image1-desktop@1x.webp">
+        <ul class="swiper-container tours__list">
 
-              <!-- 1х: 385px; 2x: 770px -->
-              <source media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.jpg">
-              <img src="img/tour-image1-desktop@1x.jpg" alt="Тур в Кавказ">
-            </picture>
-            <div class="tours__item-wrapper">
-              <div class="tours__notes">
-                <a href="#" class="tours__location">Кавказ</a>
-                <span class="tours__days">4 дня</span>
-                <span class="tours__nights">3 ночи</span>
-              </div>
-              <h3>Путешествие вокруг эльбруса</h3>
-              <div class="tours__details">
-                <div>
-                  <span>Сложность:</span>
-                  <div class="tours__difficulty">
-                    <span class="tours__difficulty-active"></span>
-                    <span class="tours__difficulty-active"></span>
-                    <span class="tours__difficulty-active"></span>
-                    <span></span>
-                    <span></span>
+          <div class="swiper-wrapper tours__list-wrapper">
+
+            <li class="swiper-slide tours__item">
+              <picture>
+                <!-- 1х: 281px; 2x: 562px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.webp">
+                <source type="image/webp" srcset="img/tour-image1-desktop@1x.webp">
+
+                <!-- 1х: 385px; 2x: 770px -->
+                <source media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.jpg">
+                <img src="img/tour-image1-desktop@1x.jpg" alt="Тур в Кавказ">
+              </picture>
+              <div class="tours__item-wrapper">
+                <div class="tours__notes">
+                  <a href="#" class="tours__location">Кавказ</a>
+                  <span class="tours__days">4 дня</span>
+                  <span class="tours__nights">3 ночи</span>
+                </div>
+                <a class="tours__link" href="#">
+                  <h3>Путешествие вокруг Эльбруса</h3>
+                </a>
+                <div class="tours__details">
+                  <div class="tours__details-wrapper">
+                    <span>Сложность:</span>
+                    <div class="tours__difficulty">
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level"></span>
+                      <span class="tours__level"></span>
+                    </div>
+                  </div>
+                  <div class="tours__date">
+                    <span>Даты выбора:</span>
+                    <span class="tours__style">12.06-19.06</span>
+                  </div>
+                  <div class="tours__group">
+                    <span>Группа:</span> <br>
+                    <span class="tours__style">до 15 чел.</span>
                   </div>
                 </div>
-                <p>
-                  <span>Даты выбора:</span>
-                  <span>12.06-12.06</span>
-                </p>
-                <p>
-                  <span>Группа:</span>
-                  <span>до 15 чел</span>
-                </p>
               </div>
-            </div>
-          </li>
-          <li class="tours__item">
-            <picture>
-              <!-- 1х: 281px; 2x: 562px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.webp">
-              <source type="image/webp" srcset="img/tour-image2-desktop@1x.webp">
+            </li>
 
-              <!-- 1х: 385px; 2x: 770px -->
-              <source media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.jpg">
-              <img src="img/tour-image2-desktop@1x.jpg" alt="Тур в Алтай">
-            </picture>
-            <div class="tours__item-wrapper">
-              <div class="tours__notes">
-                <a href="#" class="tours__location">Алтай</a>
-                <span class="tours__days">14 дней</span>
-                <span class="tours__nights">13 ночей</span>
-              </div>
-              <h3>Путь к подножию Белухи</h3>
-              <div class="tours__details">
-                <div>
-                  <span>Сложность:</span>
-                  <div class="tours__difficulty">
-                    <span class="tours__difficulty-active"></span>
-                    <span class="tours__difficulty-active"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <li class="swiper-slide tours__item">
+              <picture>
+                <!-- 1х: 281px; 2x: 562px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.webp">
+                <source type="image/webp" srcset="img/tour-image2-desktop@1x.webp">
+
+                <!-- 1х: 385px; 2x: 770px -->
+                <source media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.jpg">
+                <img src="img/tour-image2-desktop@1x.jpg" alt="Тур в Алтай">
+              </picture>
+              <div class="tours__item-wrapper">
+                <div class="tours__notes">
+                  <a href="#" class="tours__location">Алтай</a>
+                  <span class="tours__days">14 дней</span>
+                  <span class="tours__nights">13 ночей</span>
+                </div>
+                <a class="tours__link" href="#">
+                  <h3>Путь к подножию Белухи</h3>
+                </a>
+                <div class="tours__details">
+                  <div class="tours__details-wrapper">
+                    <span>Сложность:</span>
+                    <div class="tours__difficulty">
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level"></span>
+                      <span class="tours__level"></span>
+                      <span class="tours__level"></span>
+                    </div>
+                  </div>
+                  <div class="tours__date">
+                    <span>Даты выбора:</span>
+                    <span class="tours__style">14.06-23.06</span>
+                  </div>
+                  <div class="tours__group">
+                    <span>Группа:</span> <br>
+                    <span class="tours__style">до 25 чел.</span>
                   </div>
                 </div>
-                <p>
-                  <span>Даты выбора:</span>
-                  <span>14.06-23.06</span>
-                </p>
-                <p>
-                  <span>Группа:</span>
-                  <span>до 25 чел</span>
-                </p>
               </div>
-            </div>
-          </li>
-          <li class="tours__item">
-            <picture>
-              <!-- 1х: 281px; 2x: 562px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.webp">
-              <source type="image/webp" srcset="img/tour-image3-desktop@1x.webp">
+            </li>
 
-              <!-- 1х: 385px; 2x: 770px -->
-              <source media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.jpg">
-              <img src="img/tour-image3-desktop@1x.jpg" alt="Тур в Адыгею">
-            </picture>
-            <div class="tours__item-wrapper">
-              <div class="tours__notes">
-                <a href="#" class="tours__location">Адыгея</a>
-                <span class="tours__days">7 дней</span>
-                <span class="tours__nights">6 ночей</span>
-              </div>
-              <h3>Через Фишт к Чёрному морю</h3>
-              <div class="tours__details">
-                <div>
-                  <span>Сложность:</span>
-                  <div class="tours__difficulty">
-                    <span class="tours__difficulty-active"></span>
-                    <span class="tours__difficulty-active"></span>
-                    <span class="tours__difficulty-active"></span>
-                    <span></span>
-                    <span></span>
+            <li class="swiper-slide tours__item">
+              <picture>
+                <!-- 1х: 281px; 2x: 562px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.webp">
+                <source type="image/webp" srcset="img/tour-image3-desktop@1x.webp">
+
+                <!-- 1х: 385px; 2x: 770px -->
+                <source media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.jpg">
+                <img src="img/tour-image3-desktop@1x.jpg" alt="Тур в Адыгею">
+              </picture>
+              <div class="tours__item-wrapper">
+                <div class="tours__notes">
+                  <a href="#" class="tours__location">Адыгея</a>
+                  <span class="tours__days">7 дней</span>
+                  <span class="tours__nights">6 ночей</span>
+                </div>
+                <a class="tours__link" href="#">
+                  <h3>Через Фишт <br> к Чёрному морю</h3>
+                </a>
+                <div class="tours__details">
+                  <div class="tours__details-wrapper">
+                    <span>Сложность:</span>
+                    <div class="tours__difficulty">
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level"></span>
+                      <span class="tours__level"></span>
+                    </div>
+                  </div>
+                  <div class="tours__date">
+                    <span>Даты выбора:</span>
+                    <span class="tours__style">15.07-19.07</span>
+                  </div>
+                  <div class="tours__group">
+                    <span>Группа:</span> <br>
+                    <span class="tours__style">до 22 чел</span>
                   </div>
                 </div>
-                <p>
-                  <span>Даты выбора:</span>
-                  <span>15.07-19.07</span>
-                </p>
-                <p>
-                  <span>Группа:</span>
-                  <span>до 22 чел</span>
-                </p>
               </div>
-            </div>
-          </li>
+            </li>
+          </div>
         </ul>
-        <a class="tours__button" href="#">Показать все туры</a>
+        <div class="tours__cont-button">
+          <a class="tours__button" href="#">Показать все туры</a>
+        </div>
       </section>
 
       <section class="training">
-        <h2>Обучение</h2>
+        <h2 data-bg-training="Обучение">Обучение</h2>
         <p>
           Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
         </p>
         <div class="instructors">
-          <h3>Наши инструкторы</h3>
-          <div class="instructors__pagination">
-            <button class="instructors__pagination-button" type="button"><span class="visually-hidden">Влево</span></button>
-            <button class="instructors__pagination-button" type="button"><span class="visually-hidden">Вправо</span></button>
+          <div class="instructors__cont-pag">
+            <h3>Наши инструкторы</h3>
+            <div class="instructors__pagination">
+              <button class="instructors__pagination-button" type="button"><span class="visually-hidden">Влево</span></button>
+              <button class="instructors__pagination-button" type="button"><span class="visually-hidden">Вправо</span></button>
+            </div>
           </div>
           <ul class="instructors__list">
             <li class="instructors__item">
@@ -561,7 +581,22 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.tours__list', {
+      slidesPerView: 3,
+      spaceBetween: 21,
+      slidesPerView: 'auto',
+      setWrapperSize: 'true',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
   </body>
 
