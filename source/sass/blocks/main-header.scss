@@ -1,6 +1,6 @@
 .main-header {
   background-color: $background-color;
-  background-image: url("../img/облака.png"), url("../img/back.jpg");
+  background-image: url("../img/background-cloud-ad-desktop@1x.png"), url("../img/background-ad-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom, 0 2px;
   background-size: contain, cover;
@@ -77,9 +77,9 @@
 
 @media (max-width: $tablet-min-width) {
   .main-header {
-    background-image: url("../img/background-ad-tablet@1x.jpg");
-    background-position: top;
-    background-size: auto;
+    background-image: url("../img/background-cloud-ad-tablet@1x.png"), url("../img/background-ad-tablet@1x.jpg");
+    background-position: bottom, 0 0;
+    background-size: cover;
   }
 }
 
@@ -99,7 +99,8 @@
 
 @media (max-width: $mobile-min-width) {
   .main-header {
-    background-image: url("../img/background-ad-mobile@1x.jpg");
-    background-size: auto;
+    background-image: url("../img/background-cloud-ad-mobile@1x.png"), url("../img/background-ad-mobile@1x.jpg");
+    background-position: bottom, 0 0;
+    background-size: contain, cover;
   }
 }

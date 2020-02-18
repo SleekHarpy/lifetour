@@ -1,0 +1,47 @@
+.swiper-button {
+  position: relative;
+
+  width: 37px;
+  height: 35px;
+
+  background-color: $background-button-color;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.swiper-button-prev::before {
+  position: absolute;
+  transform: rotate(180deg);
+  top: 14px;
+  left: 13px;
+
+  display: block;
+  width: 13px;
+  height: 8px;
+
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.swiper-button-next::before {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+
+  display: block;
+  width: 13px;
+  height: 8px;
+
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}

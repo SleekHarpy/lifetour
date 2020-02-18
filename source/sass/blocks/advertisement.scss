@@ -113,6 +113,10 @@
   }
 }
 
+.social-list__icon {
+  fill: $main-color;
+}
+
 @media (max-width: $tablet-max-width) {
   .advertisement {
     padding-top: 97px;

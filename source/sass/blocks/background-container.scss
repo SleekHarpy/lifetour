@@ -1,0 +1,20 @@
+.background-container {
+  background-image: url("../img/background-2-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -14px;
+  background-position-x: right;
+}
+
+@media (max-width: $tablet-max-width) {
+  .background-container {
+    background-image: url("../img/background-2-tablet@1x.jpg");
+    background-position-y: 111px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .background-container {
+    background-image: url("../img/background-2-mobile@1x.jpg");
+    background-position-y: 35px;
+  }
+}

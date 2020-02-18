@@ -10,15 +10,35 @@
 }
 
 .training h2 {
+  position: relative;
   margin-bottom: 26px;
 
   font-weight: 800;
   font-size: 35px;
   line-height: 43px;
   color: $secondary-color;
+
+  &::before {
+    position: absolute;
+    top: -18px;
+    left: -1px;
+
+    display: block;
+    width: 100%;
+    height: 70px;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 67px;
+    color: $secondary-color;
+
+    opacity: 0.03;
+
+    content: attr(data-bg-training);
+  }
 }
 
-.training p {
+.training > p {
   margin-bottom: 58px;
   padding-left: 2px;
 
@@ -29,4 +49,66 @@
   line-height: 26px;
 
   color: $text-color;
+}
+
+@media (max-width: $tablet-max-width) {
+  .training {
+    padding-top: 112px;
+    padding-left: 111px;
+  }
+
+  .training h2 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 30px;
+
+    &::before {
+      top: -16px;
+
+      height: 50px;
+
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+
+  .training > p {
+    margin-bottom: 62px;
+    padding-left: 0;
+
+    width: 70%;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .training {
+    padding-top: 89px;
+    padding-left: 19px;
+  }
+
+  .training h2 {
+    margin-bottom: 21px;
+
+    font-size: 22px;
+    line-height: 27px;
+
+    &::before {
+      top: -7px;
+
+      width: 297px;
+      height: 40px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  .training p {
+    margin-bottom: 58px;
+
+    width: 80%;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

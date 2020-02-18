@@ -1,0 +1,176 @@
+.learning-proc h3 {
+  margin-bottom: 36px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $secondary-color;
+}
+
+.learning-proc__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.learning-proc__item {
+  position: relative;
+  margin-bottom: 155px;
+  padding-left: 39px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: $secondary-color;
+
+  &--move {
+    margin-right: 82px;
+
+    width: 238px;
+  }
+
+  &--move::before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/icon-map.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &--equipment {
+    margin-right: 61px;
+
+    width: 262px;
+  }
+
+  &--equipment::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/icon-boot.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &--lectures {
+    margin-right: 117px;
+    width: 217px;
+  }
+
+  &--lectures::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/icon-forest.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &--let {
+    width: 239px;
+  }
+
+  &--let::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/icon-mountain.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .learning-proc h3 {
+    margin-bottom: 50px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .learning-proc__item {
+    font-size: 14px;
+    line-height: 20px;
+
+    padding-left: 38px;
+
+    &--move {
+      margin-right: 73px;
+      margin-bottom: 155px;
+    }
+
+    &--move::before {
+      top: -7px;
+    }
+
+    &--equipment::before {
+      top: 0;
+    }
+
+    &--lectures {
+      width: 195px;
+
+      order: 1;
+    }
+
+    &--let {
+      margin-right: 100px;
+      width: 212px;
+    }
+
+    &--let::before {
+      top: -4px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .learning-proc h3 {
+    margin-bottom: 46px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .learning-proc__list {
+    padding-left: 39px;
+
+    display: block;
+  }
+
+  .learning-proc__item {
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+}
