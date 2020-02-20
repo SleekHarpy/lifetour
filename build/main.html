@@ -456,64 +456,87 @@
 
 
       <section class="reviews">
-        <h2>Отзывы</h2>
-        <div class="reviews__pagination">
-          <button class="reviews__pagination-button" type="button"><span class="visually-hidden">Влево</span></button>
-          <button class="reviews__pagination-button" type="button"><span class="visually-hidden">Вправо</span></button>
+        <div class="reviews__cont-pag">
+          <h2 data-bg-reviews="Отзывы">Отзывы</h2>
+          <div class="reviews__pagination">
+            <button class="swiper-button swiper-button-prev" type="button"><span class="visually-hidden">Влево</span></button>
+            <button class="swiper-button swiper-button-next" type="button"><span class="visually-hidden">Вправо</span></button>
+          </div>
         </div>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <picture>
-              <source type="image/webp" srcset="img/reviews-image1-desktop@1x.webp">
+        <div class="swiper-container reviews__list">
+          <ul class="swiper-wrapper reviews__list-wrapper">
+            <li class="swiper-slide reviews__item reviews__item--one">
+              <blockquote class="reviews__wrapper">
+                <div class="reviews__author">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews-image1-desktop@1x.webp">
 
-              <!-- 1х: 97px; 2x: 194px -->
-              <img src="img/reviews-image1-desktop@1x.jpg" width="97" height="100" alt="Фролов Александр">
-            </picture>
-            <blockquote>
-              <cite>Фролов Александр</cite>
-              <p>28 лет, Москва</p>
-              <p>
-                Осенью ходили в поход с друзьями. Впечатления исключительно положительные! Инструкторы - настоящие эксперты - всему научили, все показали.
-                Рассказали истории о всех местах, которые мы так или иначе посещали. С уверенностью могу разделить жизнь на до этого похода и после.
-                Настолько сильно не отдыхал душой и телом никогда.Всем рекомендую!
-              </p>
-            </blockquote>
-          </li>
-          <li class="reviews__item">
-            <picture>
-              <source type="image/webp" srcset="img/reviews-image2-desktop@1x.webp">
+                    <!-- 1х: 97px; 2x: 194px -->
+                    <img src="img/reviews-image1-desktop@1x.jpg" width="97" height="100" alt="Фролов Александр">
+                  </picture>
+                  <div class="reviews__name">
+                    <cite>Фролов Александр</cite>
+                    <p>28 лет, Москва</p>
+                  </div>
+                </div>
+                <p>
+                  Осенью ходили в поход с друзьями. Впечатления исключительно положительные! Инструкторы - настоящие эксперты - всему научили, все показали.
+                  Рассказали истории <br> о всех местах, которые мы так <br> или иначе посещали.
+                </p>
+                <p>
+                  С уверенностью могу разделить жизнь <br> на до этого похода и после. Настолько сильно не отдыхал душой и телом никогда. <br> Всем рекомендую!
+                </p>
+              </blockquote>
+            </li>
+            <li class="swiper-slide reviews__item  reviews__item--two">
+              <blockquote class="reviews__wrapper">
+                <div class="reviews__author">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews-image2-desktop@1x.webp">
 
-              <!-- 1х: 97px; 2x: 194px -->
-              <img src="img/reviews-image2-desktop@1x.jpg" width="97" height="100" alt="Светлана Олейник">
-            </picture>
-            <blockquote>
-              <cite>Светлана Олейник</cite>
-              <p>25 лет, Владивосток</p>
-              <p>
-                Хороший полноценный поход с разнообразными локациями. В начале дорога идет по лыжне, далее прошли мимо полигона, по болотам,
-                у озер и лесных ручьев, остатков дач конца 19 века. Инструктор Федор Кайгородов добросовестный и внимательный к технике безопасности и своим туристам.
-                Совет для будущих походников: важно соблюсти рекомендации в памятке.
-              </p>
-            </blockquote>
-          </li>
-          <li class="reviews__item">
-            <picture>
-              <source type="image/webp" srcset="img/reviews-image3-desktop@1x.webp">
+                    <!-- 1х: 97px; 2x: 194px -->
+                    <img src="img/reviews-image2-desktop@1x.jpg" width="97" height="100" alt="Светлана Олейник">
+                  </picture>
+                  <div class="reviews__name">
+                    <cite>Светлана Олейник</cite>
+                    <p>25 лет, Владивосток</p>
+                  </div>
+                </div>
+                <p>
+                  Хороший полноценный поход с разнообразными локациями. В начале дорога идет по лыжне, далее прошли мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века. <br>
+                  Инструктор Федор Кайгородов добросовестный <br> и внимательный к технике безопасности и своим туристам.
 
-              <!-- 1х: 97px; 2x: 194px -->
-              <img src="img/reviews-image3-desktop@1x.jpg" width="97" height="100" alt="Евгения Баженова">
-            </picture>
-            <blockquote>
-              <cite>Евгения Баженова</cite>
-              <p>23 года, Кастрома</p>
-              <p>
-                Поход понравился!! Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18м,
-                поэтому не была уверена, пройду ли до конца. Но шла и шла впереди, не плелась в конце группы.
-                К моему удивлению второй день прошел для меня легче, чем ожидала, видимо дело привычки. Спасибо ребятам и инструкторам за помощь и поддержку!
-              </p>
-            </blockquote>
-          </li>
-        </ul>
+                </p>
+                <p>
+                  Совет для будущих походников: важно соблюсти рекомендации в памятке.
+                </p>
+              </blockquote>
+            </li>
+            <li class="swiper-slide reviews__item  reviews__item--three">
+              <blockquote class="reviews__wrapper">
+                <div class="reviews__author">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews-image3-desktop@1x.webp">
+
+                    <!-- 1х: 97px; 2x: 194px -->
+                    <img src="img/reviews-image3-desktop@1x.jpg" width="97" height="100" alt="Евгения Баженова">
+                  </picture>
+                  <div class="reviews__name">
+                    <cite>Евгения Баженова</cite>
+                    <p>23 года, Кастрома</p>
+                  </div>
+                </div>
+                <p>
+                  Поход понравился!! <br> Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18м, поэтому не была уверена, пройду ли до конца.
+                  Но шла и шла впереди, не плелась в конце группы. К моему удивлению второй день прошел для меня легче, чем ожидала, видимо дело привычки.
+                </p>
+                <p>
+                  Спасибо ребятам и инструкторам за помощь и поддержку!
+                </p>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="gallery">
@@ -680,6 +703,17 @@
           slidesPerGroup: 2,
         },
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiper = new Swiper('.reviews__list', {
+      //slidesPerView: 3,
+      spaceBetween: 19,
+      slidesPerView: 'auto',
+      setWrapperSize: 'true',
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
