@@ -1,0 +1,146 @@
+.about {
+  margin: 0 auto;
+  padding-right: 121px;
+  padding-bottom: 22px;
+
+  max-width: $desktop-max-width;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  color: $secondary-color;
+}
+
+.about h2 {
+  margin-left: auto;
+  margin-bottom: 50px;
+
+  max-width: 547px;
+
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.about__history {
+  margin-left: auto;
+  margin-bottom: 55px;
+
+  max-width: 547px;
+}
+
+.about__history h3 {
+  margin-bottom: 20px;
+
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.about__history p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 23px;
+  color: $text-color;
+}
+
+.about__goal {
+  margin-left: auto;
+
+  max-width: 547px;
+}
+
+.about__goal h3 {
+  margin-bottom: 19px;
+
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.about__goal p {
+  font-size: 14px;
+  line-height: 23px;
+  color: $text-color;
+}
+
+@media (max-width: $tablet-max-width) {
+  .about {
+    padding-right: 111px;
+    padding-bottom: 10px;
+  }
+
+  .about h2 {
+    margin-bottom: 42px;
+    max-width: 42.4%;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .about__history {
+    margin-bottom: 77px;
+
+    max-width: 42.4%;
+  }
+
+  .about__history h3 {
+    margin-bottom: 23px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about__goal h3 {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about__goal p {
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .about {
+    padding-top: 364px;
+    padding-right: 0;
+    padding-left: 0;
+
+    background-image: url("../img/background-about-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -173px;
+    background-position-x: left;
+  }
+
+  .about__wrapper {
+    padding-left: 20px;
+    padding-right: 19px;
+  }
+
+  .about h2 {
+    margin-right: auto;
+    margin-bottom: 45px;
+
+    max-width: 547px;
+
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .about__history {
+    margin-right: auto;
+    margin-bottom: 42px;
+
+    max-width: 547px;
+  }
+
+  .about__goal {
+    margin-right: auto;
+  }
+
+  .about__goal h3 {
+    margin-bottom: 19px;
+  }
+}

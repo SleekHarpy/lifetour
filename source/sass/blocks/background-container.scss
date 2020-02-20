@@ -1,14 +1,27 @@
 .background-container {
-  background-image: url("../img/background-2-desktop@1x.jpg");
+  background-image: url("../img/background-2-desktop@1x.jpg"), url("../img/background-about-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position-y: -14px;
-  background-position-x: right;
+  background-position-y: -14px, bottom;
+  background-position-x: right, -2px;
+}
+
+@media (max-width: 1380px) {
+  .background-container {
+    background-position-x: right, -190px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .background-container {
+    background-position-x: right, -360px;
+  }
 }
 
 @media (max-width: $tablet-max-width) {
   .background-container {
-    background-image: url("../img/background-2-tablet@1x.jpg");
-    background-position-y: 111px;
+    background-image: url("../img/background-2-tablet@1x.jpg"), url("../img/background-about-tablet@1x.jpg");
+    background-position-y: 111px, bottom;
+    background-position-x: right, 0;
   }
 }
 

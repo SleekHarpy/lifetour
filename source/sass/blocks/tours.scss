@@ -50,19 +50,20 @@
 
 .tours__list {
   position: relative;
-  margin: 0;
   margin-bottom: 57px;
-  padding: 0;
 
   max-width: 1198px;
 
   overflow: hidden;
-
-  list-style: none;
 }
 
 .tours__list-wrapper {
+  margin: 0;
+  padding: 0;
+
   display: flex;
+
+  list-style: none;
 }
 
 .tours__pagination {

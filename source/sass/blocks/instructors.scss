@@ -23,19 +23,20 @@
 }
 
 .instructors__list {
-  margin: 0;
-  padding: 0;
   padding-left: 16px;
 
   max-width: 1194px;
 
   overflow: hidden;
-
-  list-style: none;
 }
 
 .instructors__list-wrapper {
+  margin: 0;
+  padding: 0;
+
   display: flex;
+
+  list-style: none;
 }
 
 .instructors__item {
@@ -107,6 +108,10 @@
 }
 
 @media (max-width: $mobile-max-width) {
+  .instructors {
+    margin-bottom: 76px;
+  }
+
   .instructors__cont-pag {
     margin-right: 21px;
     margin-bottom: 52px;

@@ -1,12 +1,14 @@
 .training {
+  font-family: $main-font-family;
+  font-style: normal;
+}
+
+.training__wrapper {
   margin: 0 auto;
   padding-top: 76px;
   padding-left: 122px;
 
   max-width: $desktop-max-width;
-
-  font-family: $main-font-family;
-  font-style: normal;
 }
 
 .training h2 {
@@ -38,7 +40,7 @@
   }
 }
 
-.training > p {
+.training__wrapper > p {
   margin-bottom: 58px;
   padding-left: 2px;
 
@@ -52,7 +54,7 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .training {
+  .training__wrapper {
     padding-top: 112px;
     padding-left: 111px;
   }
@@ -72,7 +74,7 @@
     }
   }
 
-  .training > p {
+  .training__wrapper > p {
     margin-bottom: 62px;
     padding-left: 0;
 
@@ -81,7 +83,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .training {
+  .training__wrapper {
     padding-top: 89px;
     padding-left: 19px;
   }
@@ -103,7 +105,7 @@
     }
   }
 
-  .training p {
+  .training__wrapper > p {
     margin-bottom: 58px;
 
     width: 80%;
