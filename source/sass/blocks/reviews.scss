@@ -1,5 +1,6 @@
 .reviews {
   margin: 0 auto;
+  margin-bottom: 106px;
   padding-left: 124px;
 
   max-width: $desktop-max-width;
@@ -69,6 +70,7 @@
 .reviews__item {
   padding-top: 46px;
   padding-left: 36px;
+  padding-bottom: 20px;
 
   width: 388px;
 
@@ -122,6 +124,7 @@
 
 .reviews__author p {
   margin-top: 5px;
+
   font-size: 14px;
   line-height: 19px;
 }
@@ -135,6 +138,7 @@
 
 @media (max-width: $tablet-max-width) {
   .reviews {
+    margin-bottom: 112px;
     padding-left: 112px;
   }
 
@@ -163,6 +167,7 @@
 
 @media (max-width: $mobile-max-width) {
   .reviews {
+    margin-bottom: 47px;
     padding-left: 22px;
   }
 
@@ -191,6 +196,7 @@
   .reviews__item {
     padding-right: 4px;
     padding-left: 13px;
+    padding-bottom: 8px;
 
     max-width: 278px;
   }

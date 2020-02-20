@@ -1,0 +1,148 @@
+.gallery__top {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 123px;
+  padding-right: 121px;
+
+  max-width: $desktop-max-width;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  color: $secondary-color;
+}
+
+.gallery__top h2 {
+  position: relative;
+  margin-bottom: 20px;
+
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+
+  &::before {
+    position: absolute;
+    top: -18px;
+    left: -1px;
+
+    display: block;
+    width: 100%;
+    height: 70px;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 67px;
+    color: $secondary-color;
+
+    opacity: 0.03;
+
+    content: attr(data-bg-gallery);
+  }
+}
+
+.gallery__top p {
+  margin-bottom: 45px;
+
+  max-width: 700px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.gallery__hashtag {
+  font-weight: 600;
+}
+
+.gallery__pagination {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  margin-right: 122px;
+}
+
+.gallery__list {
+  max-width: $desktop-max-width;
+
+  overflow: hidden;
+}
+
+.gallery__wrapper {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  list-style: none;
+}
+
+.gallery__item {
+  width: min-content;
+}
+
+@media (max-width: $tablet-max-width) {
+  .gallery__top {
+    padding-left: 110px;
+  }
+
+  .gallery__top h2 {
+    margin-bottom: 26px;
+
+    font-size: 25px;
+    line-height: 30px;
+
+    &::before {
+      top: -16px;
+
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+
+  .gallery__top p {
+    margin-bottom: 35px;
+
+    max-width: 390px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .gallery__pagination {
+    bottom: -1px;
+    margin-right: 111px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .gallery__top {
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+
+  .gallery__top h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 27px;
+
+    &::before {
+      top: -11px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  .gallery__top p {
+    margin-bottom: 33px;
+
+    max-width: 200px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .gallery__pagination {
+    bottom: 3px;
+    margin-right: 21px;
+  }
+}

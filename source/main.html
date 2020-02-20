@@ -406,8 +406,6 @@
         </section>
       </div>
 
-
-
       <section class="reviews">
         <div class="reviews__cont-pag">
           <h2 data-bg-reviews="Отзывы">Отзывы</h2>
@@ -493,74 +491,92 @@
       </section>
 
       <section class="gallery">
-        <h2>Фотогаллерея</h2>
-        <p>
-          Добавляйте фото в Instagram с хэштегом <span class="gallery__hashtag">#лайфтур</span>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
-        </p>
-        <div class="gallery__photos">
-          <picture>
-            <!-- 1х: 159px; 2x: 318px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/image1-mobile@1x.webp">
-            <source type="image/webp" srcset="img/image1-desktop@1x.webp">
+        <div class="gallery__top">
+          <h2 data-bg-gallery="Фотогалерея">Фотогалерея</h2>
+          <p>
+            Добавляйте фото в Instagram с хэштегом <span class="gallery__hashtag">#лайфтур</span>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+          </p>
+          <div class="gallery__pagination">
+            <button class="swiper-button swiper-button-prev" type="button"><span class="visually-hidden">Влево</span></button>
+            <button class="swiper-button swiper-button-next" type="button"><span class="visually-hidden">Вправо</span></button>
+          </div>
+        </div>
+        <div class="swiper-container gallery__list">
+          <ul class="swiper-wrapper gallery__wrapper">
+            <li class="swiper-slide gallery__item">
+              <picture>
+                <!-- 1х: 159px; 2x: 318px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/image1-mobile@1x.webp">
+                <source type="image/webp" srcset="img/image1-desktop@1x.webp">
 
-            <!-- 1х: 275px; 2x: 550px -->
-            <source media="(max-width: 767px)" srcset="img/image1-mobile@1x.jpg">
-            <img src="img/image1-desktop@1x.jpg" alt="Фото похода">
-          </picture>
-          <picture>
-            <!-- 1х: 159px; 2x: 318px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/image2-mobile@1x.webp">
-            <source type="image/webp" srcset="img/image2-desktop@1x.webp">
+                <!-- 1х: 275px; 2x: 550px -->
+                <source media="(max-width: 767px)" srcset="img/image1-mobile@1x.jpg">
+                <img src="img/image1-desktop@1x.jpg" alt="Фото похода">
+              </picture>
+            </li>
+            <li class="swiper-slide gallery__item">
+              <picture>
+                <!-- 1х: 159px; 2x: 318px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/image2-mobile@1x.webp">
+                <source type="image/webp" srcset="img/image2-desktop@1x.webp">
 
-            <!-- 1х: 298px; 2x: 596px -->
-            <source media="(max-width: 767px)" srcset="img/image2-mobile@1x.jpg">
-            <img src="img/image2-desktop@1x.jpg" alt="Фото похода">
-          </picture>
-          <picture>
-            <!-- 1х: 159px; 2x: 318px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/image3-mobile@1x.webp">
-            <source type="image/webp" srcset="img/image3-desktop@1x.webp">
+                <!-- 1х: 298px; 2x: 596px -->
+                <source media="(max-width: 767px)" srcset="img/image2-mobile@1x.jpg">
+                <img src="img/image2-desktop@1x.jpg" alt="Фото похода">
+              </picture>
+              <picture>
+                <!-- 1х: 159px; 2x: 318px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/image3-mobile@1x.webp">
+                <source type="image/webp" srcset="img/image3-desktop@1x.webp">
 
-            <!-- 1х: 298px; 2x: 596px -->
-            <source media="(max-width: 767px)" srcset="img/image3-mobile@1x.jpg">
-            <img src="img/image3-desktop@1x.jpg" alt="Фото похода">
-          </picture>
-          <picture>
-            <!-- 1х: 157px; 2x: 314px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/image4-mobile@1x.webp">
-            <source type="image/webp" srcset="img/image4-desktop@1x.webp">
+                <!-- 1х: 298px; 2x: 596px -->
+                <source media="(max-width: 767px)" srcset="img/image3-mobile@1x.jpg">
+                <img src="img/image3-desktop@1x.jpg" alt="Фото похода">
+              </picture>
+            </li>
+            <li class="swiper-slide gallery__item">
+              <picture>
+                <!-- 1х: 157px; 2x: 314px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/image4-mobile@1x.webp">
+                <source type="image/webp" srcset="img/image4-desktop@1x.webp">
 
-            <!-- 1х: 273px; 2x: 546px -->
-            <source media="(max-width: 767px)" srcset="img/image4-mobile@1x.jpg">
-            <img src="img/image4-desktop@1x.jpg" alt="Фото похода">
-          </picture>
-          <picture>
-            <!-- 1х: 172px; 2x: 344px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/image5-mobile@1x.webp">
-            <source type="image/webp" srcset="img/image5-desktop@1x.webp">
+                <!-- 1х: 273px; 2x: 546px -->
+                <source media="(max-width: 767px)" srcset="img/image4-mobile@1x.jpg">
+                <img src="img/image4-desktop@1x.jpg" alt="Фото похода">
+              </picture>
+            </li>
+            <li class="swiper-slide gallery__item">
+              <picture>
+                <!-- 1х: 172px; 2x: 344px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/image5-mobile@1x.webp">
+                <source type="image/webp" srcset="img/image5-desktop@1x.webp">
 
-            <!-- 1х: 298px; 2x: 596px -->
-            <source media="(max-width: 767px)" srcset="img/image5-mobile@1x.jpg">
-            <img src="img/image5-desktop@1x.jpg" alt="Фото похода">
-          </picture>
-          <picture>
-            <!-- 1х: 173px; 2x: 346px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/image6-mobile@1x.webp">
-            <source type="image/webp" srcset="img/image6-desktop@1x.webp">
+                <!-- 1х: 298px; 2x: 596px -->
+                <source media="(max-width: 767px)" srcset="img/image5-mobile@1x.jpg">
+                <img src="img/image5-desktop@1x.jpg" alt="Фото похода">
+              </picture>
+              <picture>
+                <!-- 1х: 173px; 2x: 346px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/image6-mobile@1x.webp">
+                <source type="image/webp" srcset="img/image6-desktop@1x.webp">
 
-            <!-- 1х: 298px; 2x: 596px -->
-            <source media="(max-width: 767px)" srcset="img/image6-mobile@1x.jpg">
-            <img src="img/image6-desktop@1x.jpg" alt="Фото похода">
-          </picture>
-          <picture>
-            <!-- 1х: 160px; 2x: 320px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/image7-mobile@1x.webp">
-            <source type="image/webp" srcset="img/image7-desktop@1x.webp">
+                <!-- 1х: 298px; 2x: 596px -->
+                <source media="(max-width: 767px)" srcset="img/image6-mobile@1x.jpg">
+                <img src="img/image6-desktop@1x.jpg" alt="Фото похода">
+              </picture>
+            </li>
+            <li class="swiper-slide gallery__item">
+              <picture>
+                <!-- 1х: 160px; 2x: 320px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/image7-mobile@1x.webp">
+                <source type="image/webp" srcset="img/image7-desktop@1x.webp">
 
-            <!-- 1х: 276px; 2x: 552px -->
-            <source media="(max-width: 767px)" srcset="img/image7-mobile@1x.jpg">
-            <img src="img/image7-desktop@1x.jpg" alt="Фото похода">
-          </picture>
+                <!-- 1х: 276px; 2x: 552px -->
+                <source media="(max-width: 767px)" srcset="img/image7-mobile@1x.jpg">
+                <img src="img/image7-desktop@1x.jpg" alt="Фото похода">
+              </picture>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -667,6 +683,23 @@
       spaceBetween: 19,
       slidesPerView: 'auto',
       setWrapperSize: 'true',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiper = new Swiper('.gallery__list', {
+      slidesPerGroup: 2,
+      spaceBetween: 3,
+      slidesPerView: 'auto',
+      setWrapperSize: 'true',
+      breakpoints: {
+        // when window width is >= 500px
+        767: {
+          spaceBetween: 5,
+        },
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
