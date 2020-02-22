@@ -1,0 +1,28 @@
+.main-footer {
+  margin: 0 auto;
+  padding: 11px 123px;
+  padding-right: 120px;
+  padding-bottom: 50px;
+
+  max-width: $desktop-max-width;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  color: $secondary-color;
+}
+
+@media (max-width: $tablet-max-width) {
+  .main-footer {
+    padding-top: 0;
+    padding-left: 111px;
+    padding-right: 111px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .main-footer {
+    padding-left: 17px;
+    padding-right: 0;
+  }
+}

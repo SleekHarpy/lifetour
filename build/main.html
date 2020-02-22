@@ -628,58 +628,80 @@
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Связь с нами</h2>
-        <b class="contacts__title">Остались вопросы?</b>
-        <p>
-          Заполните форму и наш оператор свяжется с вами для консультации.
-        </p>
-        <form class="question-form" action="#" method="GET" name="question-form">
-          <label class="visually-hidden" for="name">Ваше имя</label>
-          <input id="name" type="text" name="name" placeholder="Как к вам обращаться?" autocomplete="name">
-          <label class="visually-hidden" for="phone">Ваш телефон</label>
-          <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel">
-          <button type="submit">Отправить</button>
-        </form>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Связь с нами</h2>
+          <b class="contacts__title">Остались вопросы?</b>
+          <p>
+            <span class="contacts__carryover">Заполните форму</span> и наш оператор свяжется с вами для консультации.
+          </p>
+          <form class="question-form" action="#" method="GET" name="question-form">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input id="name" type="text" name="name" placeholder="Как к вам обращаться?" autocomplete="name">
+            <div class="question-form__phone">
+              <label class="visually-hidden" for="phone">Ваш телефон</label>
+            <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel">
+            </div>
+            <button class="question-form__button" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="footer-navigation">
         <a class="footer-navigation__logo">
-          <img src="img/logo-desktop.svg" alt="Логотип Lifetour">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/logo-footer-tablet.svg">
+
+            <img src="img/logo-footer-desktop.svg" alt="Логотип Lifetour">
+          </picture>
         </a>
         <ul class="footer-list">
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Туры</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Обучение</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">О нас</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Отзывы</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Фотографии</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Контакты</a></li>
+          <li>
+            <ul class="footer-list__collumn">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Туры</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Обучение</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer-list__collumn">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">О нас</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Отзывы</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer-list__collumn">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Фотографии</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Контакты</a></li>
+            </ul>
+          </li>
         </ul>
-        <a class="footer-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
+        <div>
+          <a class="footer-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
+        </div>
       </div>
       <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+        <ul class="social-list social-list--footer">
+          <li class="social-list__item social-list__item--vk">
+            <a href="#" class="social-list__link">
               <span class="visually-hidden">Вконтакте</span>
-              <svg class="footer-social__svg-icon" width="16" height="9">
+              <svg class="social-list__icon" width="16" height="16">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link">
               <span class="visually-hidden">Фейсбук</span>
-              <svg class="footer-social__svg-icon" width="7" height="14">
+              <svg class="social-list__icon" width="14" height="14">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link">
               <span class="visually-hidden">Инстаграм</span>
-              <svg class="footer-social__svg-icon" width="17" height="17">
+              <svg class="social-list__icon" width="17" height="17">
                 <use xlink:href="#icon-inst"></use>
               </svg>
             </a>
@@ -692,7 +714,7 @@
     </footer>
 
     <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/vendor.js"></script>
 
   <!-- Initialize Swiper -->
   <script>

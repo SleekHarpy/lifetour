@@ -1,0 +1,21 @@
+.privacy {
+  margin-right: 3px;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.privacy__link {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+@media (max-width: $mobile-max-width) {
+  .privacy {
+    margin-right: 18px;
+  }
+}

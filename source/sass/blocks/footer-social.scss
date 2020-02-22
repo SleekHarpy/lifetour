@@ -1,0 +1,12 @@
+.footer-social {
+  margin: 0 auto;
+  margin-bottom: 31px;
+
+  max-width: 300px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .footer-social {
+    margin-bottom: 14px;
+  }
+}
