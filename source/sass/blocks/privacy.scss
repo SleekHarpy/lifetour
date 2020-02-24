@@ -12,6 +12,11 @@
 .privacy__link {
   color: $secondary-color;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: $mobile-max-width) {

@@ -18,6 +18,11 @@
   text-align: right;
   color: $secondary-color;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: $tablet-max-width) {

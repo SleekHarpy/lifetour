@@ -18,7 +18,7 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="common">
 
     <div style="display:none">
       <include src="build/img/sprite_auto.svg"></include>
@@ -118,9 +118,9 @@
                     <span class="tours__days">4 дня</span>
                     <span class="tours__nights">3 ночи</span>
                   </div>
-                  <a class="tours__link" href="#">
-                    <h3>Путешествие вокруг Эльбруса</h3>
-                  </a>
+                  <h3>
+                    <a class="tours__link" href="#">Путешествие вокруг Эльбруса</a>
+                  </h3>
                   <div class="tours__details">
                     <div class="tours__details-wrapper">
                       <span>Сложность:</span>
@@ -160,9 +160,9 @@
                     <span class="tours__days">14 дней</span>
                     <span class="tours__nights">13 ночей</span>
                   </div>
-                  <a class="tours__link" href="#">
-                    <h3>Путь к подножию Белухи</h3>
-                  </a>
+                  <h3>
+                    <a class="tours__link" href="#">Путь к подножию Белухи</a>
+                  </h3>
                   <div class="tours__details">
                     <div class="tours__details-wrapper">
                       <span>Сложность:</span>
@@ -202,9 +202,9 @@
                     <span class="tours__days">7 дней</span>
                     <span class="tours__nights">6 ночей</span>
                   </div>
-                  <a class="tours__link" href="#">
-                    <h3>Через Фишт <br> к Чёрному морю</h3>
-                  </a>
+                  <h3>
+                    <a class="tours__link" href="#">Через Фишт <br> к Чёрному морю</a>
+                  </h3>
                   <div class="tours__details">
                     <div class="tours__details-wrapper">
                       <span>Сложность:</span>
@@ -227,6 +227,7 @@
                   </div>
                 </div>
               </li>
+
             </ul>
           </div>
           <div class="tours__cont-button">
@@ -431,11 +432,11 @@
                   </div>
                 </div>
                 <p>
-                  Осенью ходили в поход с друзьями. Впечатления исключительно положительные! Инструкторы - настоящие эксперты - всему научили, все показали.
+                  <span class="reviews__quotes reviews__quotes--before"></span>Осенью ходили в поход с друзьями. Впечатления исключительно положительные! Инструкторы - настоящие эксперты - всему научили, все показали.
                   Рассказали истории <br> о всех местах, которые мы так <br> или иначе посещали.
                 </p>
                 <p>
-                  С уверенностью могу разделить жизнь <br> на до этого похода и после. Настолько сильно не отдыхал душой и телом никогда. <br> Всем рекомендую!
+                  С уверенностью могу разделить жизнь <br> на до этого похода и после. Настолько сильно не отдыхал душой и телом никогда. <br> Всем рекомендую!<span class="reviews__quotes reviews__quotes--after"></span>
                 </p>
               </blockquote>
             </li>
@@ -454,12 +455,12 @@
                   </div>
                 </div>
                 <p>
-                  Хороший полноценный поход с разнообразными локациями. В начале дорога идет по лыжне, далее прошли мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века. <br>
+                  <span class="reviews__quotes reviews__quotes--before"></span>Хороший полноценный поход с разнообразными локациями. В начале дорога идет по лыжне, далее прошли мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века. <br>
                   Инструктор Федор Кайгородов добросовестный <br> и внимательный к технике безопасности и своим туристам.
 
                 </p>
                 <p>
-                  Совет для будущих походников: важно соблюсти рекомендации в памятке.
+                  Совет для будущих походников: важно соблюсти рекомендации в памятке.<span class="reviews__quotes reviews__quotes--after"></span>
                 </p>
               </blockquote>
             </li>
@@ -478,11 +479,11 @@
                   </div>
                 </div>
                 <p>
-                  Поход понравился!! <br> Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18м, поэтому не была уверена, пройду ли до конца.
+                  <span class="reviews__quotes reviews__quotes--before"></span>Поход понравился!! <br> Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18м, поэтому не была уверена, пройду ли до конца.
                   Но шла и шла впереди, не плелась в конце группы. К моему удивлению второй день прошел для меня легче, чем ожидала, видимо дело привычки.
                 </p>
                 <p>
-                  Спасибо ребятам и инструкторам за помощь и поддержку!
+                  Спасибо ребятам и инструкторам за помощь и поддержку!<span class="reviews__quotes reviews__quotes--after"></span>
                 </p>
               </blockquote>
             </li>
@@ -601,68 +602,70 @@
     </main>
 
     <footer class="main-footer">
-      <div class="footer-navigation">
-        <a class="footer-navigation__logo">
-          <picture>
-            <source media="(max-width: 1023px)" srcset="img/logo-footer-tablet.svg">
+      <div class="main-footer__wrapper">
+        <div class="footer-navigation">
+          <a class="footer-navigation__logo">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/logo-footer-tablet.svg">
 
-            <img src="img/logo-footer-desktop.svg" alt="Логотип Lifetour">
-          </picture>
-        </a>
-        <ul class="footer-list">
-          <li>
-            <ul class="footer-list__collumn">
-              <li class="footer-list__item"><a href="#" class="footer-list__link">Туры</a></li>
-              <li class="footer-list__item"><a href="#" class="footer-list__link">Обучение</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="footer-list__collumn">
-              <li class="footer-list__item"><a href="#" class="footer-list__link">О нас</a></li>
-              <li class="footer-list__item"><a href="#" class="footer-list__link">Отзывы</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="footer-list__collumn">
-              <li class="footer-list__item"><a href="#" class="footer-list__link">Фотографии</a></li>
-              <li class="footer-list__item"><a href="#" class="footer-list__link">Контакты</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div>
-          <a class="footer-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
+              <img src="img/logo-footer-desktop.svg" alt="Логотип Lifetour">
+            </picture>
+          </a>
+          <ul class="footer-list">
+            <li>
+              <ul class="footer-list__collumn">
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Туры</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Обучение</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="footer-list__collumn">
+                <li class="footer-list__item"><a href="#" class="footer-list__link">О нас</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Отзывы</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="footer-list__collumn">
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Фотографии</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Контакты</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <a class="footer-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
+          </div>
         </div>
-      </div>
-      <div class="footer-social">
-        <ul class="social-list social-list--footer">
-          <li class="social-list__item social-list__item--vk">
-            <a href="#" class="social-list__link">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="social-list__icon" width="16" height="16">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg class="social-list__icon" width="14" height="14">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="social-list__icon" width="17" height="17">
-                <use xlink:href="#icon-inst"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="privacy">
-        <a class="privacy__link" href="#">Политика конфиденциальности</a>
+        <div class="footer-social">
+          <ul class="social-list social-list--footer">
+            <li class="social-list__item social-list__item--vk">
+              <a href="#" class="social-list__link">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social-list__icon" width="16" height="16">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social-list__icon" width="14" height="14">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="social-list__icon" width="17" height="17">
+                  <use xlink:href="#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="privacy">
+          <a class="privacy__link" href="#">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
 
@@ -672,10 +675,10 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.tours__list', {
-      //slidesPerView: 3,
       spaceBetween: 21,
       slidesPerView: 'auto',
       setWrapperSize: 'true',
+      grabCursor: 'true',
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -683,11 +686,11 @@
     });
 
     var swiper = new Swiper('.instructors__list', {
-      //slidesPerView: 5,
       slidesPerGroup: 1,
-      spaceBetween: 35.6,
+      spaceBetween: 4.9,
       slidesPerView: 'auto',
       setWrapperSize: 'true',
+      grabCursor: 'true',
       breakpoints: {
         // when window width is >= 500px
         500: {
@@ -701,10 +704,10 @@
     });
 
     var swiper = new Swiper('.reviews__list', {
-      //slidesPerView: 3,
       spaceBetween: 19,
       slidesPerView: 'auto',
       setWrapperSize: 'true',
+      grabCursor: 'true',
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -716,6 +719,7 @@
       spaceBetween: 3,
       slidesPerView: 'auto',
       setWrapperSize: 'true',
+      grabCursor: 'true',
       breakpoints: {
         // when window width is >= 500px
         767: {

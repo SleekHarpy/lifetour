@@ -1,6 +1,12 @@
 .main-footer {
+  margin-top: -1px;
+
+  background-color: $main-color;
+}
+
+.main-footer__wrapper {
   margin: 0 auto;
-  padding: 11px 123px;
+  padding: 12px 123px;
   padding-right: 120px;
   padding-bottom: 50px;
 
@@ -13,7 +19,7 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .main-footer {
+  .main-footer__wrapper {
     padding-top: 0;
     padding-left: 111px;
     padding-right: 111px;
@@ -21,7 +27,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .main-footer {
+  .main-footer__wrapper {
     padding-left: 17px;
     padding-right: 0;
   }

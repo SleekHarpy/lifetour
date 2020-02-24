@@ -136,6 +136,40 @@
   line-height: 23px;
 }
 
+.reviews__quotes {
+  position: relative;
+
+  &--before::before {
+    position: absolute;
+    top: -9px;
+    left: 0;
+
+    display: block;
+    width: 30px;
+    height: 23px;
+
+    background-image: url("../img/icon-quotes-nverted.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &--after::before {
+    position: absolute;
+    bottom: -15px;
+    left: -25px;
+
+    display: block;
+    width: 30px;
+    height: 23px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .reviews {
     margin-bottom: 112px;
