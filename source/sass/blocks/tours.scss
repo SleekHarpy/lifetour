@@ -55,18 +55,11 @@
 
 .tours__list {
   position: relative;
-  margin-bottom: 57px;
-
-  max-width: 1198px;
-
-  overflow: hidden;
-}
-
-.tours__list-wrapper {
   margin: 0;
+  margin-bottom: 57px;
   padding: 0;
 
-  display: flex;
+  max-width: 1198px;
 
   list-style: none;
 }
@@ -79,6 +72,8 @@
 
 .tours__item {
   position: relative;
+  margin-right: 19px;
+
   width: 384px;
 }
 
@@ -363,6 +358,8 @@
   }
 
   .tours__item {
+    margin-right: 20px;
+
     width: 281px;
   }
 

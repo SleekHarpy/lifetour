@@ -1,4 +1,35 @@
-.swiper-button {
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.reviews__list .slick-track {
+  padding: 10px;
+}
+
+.instructors__list .slick-slide {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 234px;
+}
+
+.reviews__list .slick-slide {
+  margin-right: 19px;
+
+  width: 388px;
+}
+
+.gallery__list .slick-slide {
+  margin-right: 5px;
+
+  width: min-content;
+}
+
+.slick-button {
   position: relative;
 
   width: 37px;
@@ -15,7 +46,7 @@
   }
 }
 
-.swiper-button-prev::before {
+.slick-button-prev::before {
   position: absolute;
   transform: rotate(180deg);
   top: 14px;
@@ -31,7 +62,7 @@
   content: "";
 }
 
-.swiper-button-next::before {
+.slick-button-next::before {
   position: absolute;
   top: 14px;
   left: 13px;

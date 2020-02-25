@@ -1,6 +1,6 @@
 .reviews {
   margin: 0 auto;
-  margin-bottom: 106px;
+  margin-bottom: 96px;
   padding-left: 124px;
 
   max-width: $desktop-max-width;
@@ -17,7 +17,7 @@
 
 .reviews h2 {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 
   font-weight: 800;
   font-size: 35px;
@@ -50,19 +50,11 @@
 }
 
 .reviews__list {
+  margin: 0;
   padding: 10px;
   transform: translateX(-10px);
 
-  max-width: 1221px;
-
-  overflow: hidden;
-}
-
-.reviews__list-wrapper {
-  margin: 0;
-  padding: 0;
-
-  display: flex;
+  max-width: 1240px;
 
   list-style: none;
 }
@@ -172,12 +164,12 @@
 
 @media (max-width: $tablet-max-width) {
   .reviews {
-    margin-bottom: 112px;
+    margin-bottom: 102px;
     padding-left: 112px;
   }
 
   .reviews h2 {
-    margin-bottom: 43px;
+    margin-bottom: 33px;
 
     font-size: 25px;
     line-height: 30px;
@@ -201,12 +193,12 @@
 
 @media (max-width: $mobile-max-width) {
   .reviews {
-    margin-bottom: 47px;
+    margin-bottom: 37px;
     padding-left: 22px;
   }
 
   .reviews h2 {
-    margin-bottom: 23px;
+    margin-bottom: 13px;
 
     font-size: 22px;
     line-height: 27px;

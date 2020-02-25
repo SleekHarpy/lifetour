@@ -61,21 +61,15 @@
 }
 
 .gallery__list {
-  //margin: 0 auto;
-  //max-width: $desktop-max-width;
-
-  overflow: hidden;
-}
-
-.gallery__wrapper {
   margin: 0;
   padding: 0;
 
   display: flex;
   justify-content: center;
-  //width: min-content;
 
   list-style: none;
+  margin: 0 auto;
+  max-width: $desktop-max-width;
 }
 
 .gallery__item {

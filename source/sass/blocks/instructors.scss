@@ -1,15 +1,15 @@
 .instructors {
   padding-left: 2px;
-  margin-bottom: 63px;
+  margin-bottom: 35px;
 }
 
 .instructors__cont-pag {
   position: relative;
   margin-right: 122px;
-  margin-bottom: 24px;
 }
 
 .instructors h3 {
+  margin-bottom: 14px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -23,19 +23,12 @@
 }
 
 .instructors__list {
-  transform: translateX(-26px);
-  padding-left: 16px;
-
-  max-width: 1225px;
-
-  overflow: hidden;
-}
-
-.instructors__list-wrapper {
+  transform: translateX(-11px);
   margin: 0;
+  padding-left: 16px;
   padding: 10px;
 
-  display: flex;
+  max-width: 1225px;
 
   list-style: none;
 }
@@ -46,6 +39,7 @@
   padding-left: 16px;
 
   width: 234px;
+  min-height: 386px;
 
   box-shadow: 0 0 15px 0 $shadow-color;
 }
@@ -96,7 +90,7 @@
 
 @media (max-width: $tablet-max-width) {
   .instructors {
-    margin-bottom: 66px;
+    margin-bottom: 37px;
   }
 
   .instructors h3 {
@@ -106,7 +100,7 @@
 
   .instructors__cont-pag {
     margin-right: 111px;
-    margin-bottom: 33px;
+    margin-bottom: 23px;
   }
 
   .instructors__pagination {
@@ -116,12 +110,12 @@
 
 @media (max-width: $mobile-max-width) {
   .instructors {
-    margin-bottom: 76px;
+    margin-bottom: 38px;
   }
 
   .instructors__cont-pag {
     margin-right: 21px;
-    margin-bottom: 52px;
+    margin-bottom: 17px;
   }
 
   .instructors h3 {
