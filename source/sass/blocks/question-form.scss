@@ -8,8 +8,6 @@
 
   width: 354px;
 
-  color: $field-placeholder-color;
-
   border: none;
 }
 
@@ -57,6 +55,8 @@
     font-size: 14px;
     line-height: 21px;
     text-align: center;
+
+    outline: none;
   }
 
   .question-form__button {
@@ -67,6 +67,8 @@
 
     font-size: 14px;
     line-height: 21px;
+
+    outline: none;
   }
 }
 

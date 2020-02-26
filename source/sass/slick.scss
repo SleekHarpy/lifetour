@@ -76,3 +76,15 @@
 
   content: "";
 }
+
+@media (max-width: $tablet-max-width) {
+  .slick-button {
+    outline: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews__list .slick-slide {
+    width: 278px;
+  }
+}
