@@ -1,18 +1,29 @@
 .question-form {
   padding-right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.question-form .error {
+  color: $invalid-color;
 }
 
 .question-form input {
   padding: 23px 32px;
-  margin-right: 9px;
 
   width: 354px;
 
   border: none;
+  border-radius: none;
+  outline: none;
 }
 
-.question-form__phone {
-  display: inline;
+.question-form__phone,
+.question-form__name {
+  margin-right: 11px;
+  max-width: 355px;
 }
 
 .question-form__phone input {
@@ -20,8 +31,9 @@
 }
 
 .question-form__button {
-  margin-left: 5px;
+  margin-left: 6px;
   padding: 23px 0;
+
   width: 246px;
 
   color: $main-color;
@@ -30,6 +42,7 @@
   border: none;
 
   cursor: pointer;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -42,6 +55,8 @@
     margin: 0 auto;
     padding-left: 15px;
 
+    flex-direction: column;
+    //align-items: flex-start;
     max-width: 270px;
   }
 
@@ -55,8 +70,12 @@
     font-size: 14px;
     line-height: 21px;
     text-align: center;
+  }
 
-    outline: none;
+  .question-form__phone,
+  .question-form__name {
+    //margin-left: 20px;
+    margin-right: 0;
   }
 
   .question-form__button {
@@ -67,8 +86,6 @@
 
     font-size: 14px;
     line-height: 21px;
-
-    outline: none;
   }
 }
 

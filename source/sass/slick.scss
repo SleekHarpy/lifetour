@@ -39,6 +39,7 @@
   border: none;
 
   cursor: pointer;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -75,12 +76,6 @@
   background-repeat: no-repeat;
 
   content: "";
-}
-
-@media (max-width: $tablet-max-width) {
-  .slick-button {
-    outline: none;
-  }
 }
 
 @media (max-width: $mobile-max-width) {

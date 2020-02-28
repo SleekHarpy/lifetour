@@ -489,7 +489,7 @@
         <div class="gallery__top">
           <h2 data-bg-gallery="Фотогалерея">Фотогалерея</h2>
           <p>
-            Добавляйте фото в Instagram с хэштегом <span class="gallery__hashtag">#лайфтур</span>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+            Добавляйте фото в Instagram с хэштегом <b>#лайфтур</b>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
           </p>
           <div class="gallery__pagination">
             <button class="gallery__prev slick-button slick-button-prev" type="button"><span class="visually-hidden">Влево</span></button>
@@ -581,11 +581,13 @@
             <span class="contacts__carryover">Заполните форму</span> и наш оператор свяжется с вами для консультации.
           </p>
           <form class="question-form" action="#" method="GET" name="question-form">
-            <label class="visually-hidden" for="name">Ваше имя</label>
-            <input id="name" type="text" name="name" placeholder="Как к вам обращаться?" autocomplete="name" required="">
+            <div class="question-form__name">
+              <label class="visually-hidden" for="name">Ваше имя</label>
+              <input id="name" type="text" name="name" placeholder="Как к вам обращаться?" autocomplete="name" required="">
+            </div>
             <div class="question-form__phone">
               <label class="visually-hidden" for="phone">Ваш телефон</label>
-            <input id="phone" type="tel" name="phone" placeholder="Телефон" data-mask="+0 (000) 000-0000" autocomplete="tel" required="">
+              <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel">
             </div>
             <button class="question-form__button" type="submit">Отправить</button>
           </form>
