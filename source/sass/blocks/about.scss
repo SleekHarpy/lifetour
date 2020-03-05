@@ -1,6 +1,15 @@
 .about {
+  margin-bottom: 42px;
+
+  background-image: url("../img/background-about-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -132px;
+  background-position-x: -2px;
+}
+
+.about__wrapper {
   margin: 0 auto;
-  margin-bottom: 82px;
+  padding-top: 21px;
   padding-right: 121px;
   padding-bottom: 22px;
 
@@ -8,109 +17,87 @@
 
   font-family: $main-font-family;
   font-style: normal;
-  color: $secondary-color;
-}
-
-.about h2 {
-  margin-left: auto;
-  margin-bottom: 50px;
-
-  max-width: 547px;
-
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 43px;
-}
-
-.about__history {
-  margin-left: auto;
-  margin-bottom: 55px;
-
-  max-width: 547px;
-}
-
-.about__history h3 {
-  margin-bottom: 20px;
-
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.about__history p {
-  margin: 0;
-
   font-size: 14px;
   line-height: 23px;
   color: $text-color;
 }
 
-.about__goal {
-  margin-left: auto;
-
-  max-width: 547px;
-}
-
-.about__goal h3 {
+.about__wrapper h3 {
   margin-bottom: 19px;
 
   font-size: 21px;
   line-height: 26px;
 }
 
-.about__goal p {
-  font-size: 14px;
-  line-height: 23px;
-  color: $text-color;
+.about__wrapper div {
+  margin-left: auto;
+  margin-bottom: 55px;
+
+  max-width: 547px;
+}
+
+.about__wrapper p {
+  margin: 0;
+}
+
+@media (max-width: 1380px) {
+  .about {
+    background-position-x: -190px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .about {
+    background-position-x: -360px;
+  }
 }
 
 @media (max-width: $tablet-max-width) {
   .about {
-    margin-bottom: 64px;
+    margin-bottom: 0;
+
+    background-image: url("../img/background-about-tablet@1x.jpg");
+    background-position-y: 16px;
+    background-position-x: 0;
+  }
+
+  .about__wrapper {
     padding-right: 111px;
-    padding-bottom: 24px;
+    padding-bottom: 12px;
   }
 
-  .about h2 {
-    margin-bottom: 42px;
-    max-width: 42.4%;
+  .about__wrapper h3 {
+    margin-bottom: 14px;
 
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
-  .about__history {
+  .about__wrapper div:first-of-type h3 {
+    margin-bottom: 23px;
+  }
+
+  .about__wrapper div:first-of-type {
     margin-bottom: 77px;
 
     max-width: 42.4%;
   }
 
-  .about__history h3 {
-    margin-bottom: 23px;
-
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .about__goal h3 {
-    margin-bottom: 14px;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .about__goal p {
-    margin-bottom: 0;
+  .about__wrapper p {
     padding-right: 5px;
 
     font-size: 14px;
     line-height: 23px;
+  }
+
+  .about__wrapper div:first-of-type p {
+    padding-right: 0;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .about {
     margin-bottom: 39px;
-    padding: 0;
-    padding-top: 364px;
 
     background-image: url("../img/background-about-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -119,32 +106,24 @@
   }
 
   .about__wrapper {
+    padding: 0;
+    padding-top: 364px;
     padding-left: 20px;
     padding-right: 19px;
   }
 
-  .about h2 {
+  .about__wrapper div {
     margin-right: auto;
-    margin-bottom: 45px;
-
-    max-width: 547px;
-
-    font-size: 22px;
-    line-height: 27px;
+    margin-bottom: 0;
   }
 
-  .about__history {
-    margin-right: auto;
+  .about__wrapper div:first-of-type {
     margin-bottom: 42px;
 
     max-width: 547px;
   }
 
-  .about__goal {
-    margin-right: auto;
-  }
-
-  .about__goal h3 {
+  .about__wrapper h3 {
     margin-bottom: 19px;
   }
 }

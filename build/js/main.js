@@ -8,7 +8,7 @@ $(document).ready(function (){
     prevArrow: $('.tours__prev'),
     nextArrow: $('.tours__next'),
   });
-  
+
   $('.instructors__list').slick({
     slidesToShow: 1,
     slidesToScroll: 2,
@@ -24,11 +24,12 @@ $(document).ready(function (){
     prevArrow: $('.reviews__prev'),
     nextArrow: $('.reviews__next'),
   });
-  
+
   $('.gallery__list').slick({
     slidesToShow: 1,
     slidesToScroll: 2,
     variableWidth: true,
+    infinite: false,
     prevArrow: $('.gallery__prev'),
     nextArrow: $('.gallery__next'),
   });

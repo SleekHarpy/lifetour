@@ -3,9 +3,11 @@
   margin-bottom: 35px;
 }
 
-.instructors__cont-pag {
+.instructors__head {
   position: relative;
-  margin-right: 122px;
+  margin-right: 20px;
+
+  max-width: 1196px;
 }
 
 .instructors h3 {
@@ -45,11 +47,15 @@
 }
 
 .instructors__soc-wrapper {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .instructors__item h4 {
+  margin-top: 18px;
   margin-bottom: 8px;
+
   width: 110px;
 
   font-weight: bold;
@@ -58,9 +64,7 @@
 }
 
 .instructors__social-link {
-  position: absolute;
-  top: 4px;
-  right: 0;
+  margin-top: 3px;
 
   display: flex;
   justify-content: center;
@@ -98,7 +102,7 @@
     line-height: 22px;
   }
 
-  .instructors__cont-pag {
+  .instructors__head {
     margin-right: 111px;
     margin-bottom: 23px;
   }
@@ -113,7 +117,7 @@
     margin-bottom: 38px;
   }
 
-  .instructors__cont-pag {
+  .instructors__head {
     margin-right: 21px;
     margin-bottom: 17px;
   }

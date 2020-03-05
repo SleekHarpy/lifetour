@@ -10,7 +10,8 @@
   color: $invalid-color;
 }
 
-.question-form input {
+.question-form input[type="text"],
+.question-form input[type="tel"] {
   padding: 23px 32px;
 
   width: 354px;
@@ -20,17 +21,16 @@
   outline: none;
 }
 
-.question-form__phone,
-.question-form__name {
+.question-form__field {
   margin-right: 11px;
   max-width: 355px;
 }
 
-.question-form__phone input {
+.question-form__phone input[type="tel"] {
   padding-left: 38px;
 }
 
-.question-form__button {
+.question-form button[type="submit"] {
   margin-left: 6px;
   padding: 23px 0;
 
@@ -56,11 +56,11 @@
     padding-left: 15px;
 
     flex-direction: column;
-    //align-items: flex-start;
     max-width: 270px;
   }
 
-  .question-form input {
+  .question-form input[type="text"],
+  .question-form input[type="tel"] {
     margin: 0;
     margin-bottom: 7px;
     padding: 15px 0;
@@ -74,11 +74,10 @@
 
   .question-form__phone,
   .question-form__name {
-    //margin-left: 20px;
     margin-right: 0;
   }
 
-  .question-form__button {
+  .question-form button[type="submit"] {
     margin: 0;
     padding: 14px 0;
 

@@ -10,6 +10,10 @@
   padding: 10px;
 }
 
+.gallery__list .slick-track {
+  max-width: min-content;
+}
+
 .instructors__list .slick-slide {
   margin-top: 10px;
   margin-right: 5px;
@@ -81,5 +85,13 @@
 @media (max-width: $mobile-max-width) {
   .reviews__list .slick-slide {
     width: 278px;
+  }
+
+  .gallery__list .slick-slide:nth-child(2n) {
+    width: 171px;
+  }
+
+  .gallery__list .slick-slide:nth-child(2n) img {
+    width: 171px;
   }
 }

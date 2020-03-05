@@ -91,8 +91,8 @@
 
       <div class="background-container">
         <section class="tours">
-          <div class="tours__cont-pag">
-            <h2 data-bg-tours="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__head">
+            <h2 class="page-title" data-bg-shadow="Ближайшие туры">Ближайшие туры</h2>
             <div class="tours__pagination">
               <button class="tours__prev slick-button slick-button-prev" type="button"><span class="visually-hidden">Влево</span></button>
               <button class="tours__next slick-button slick-button-next" type="button"><span class="visually-hidden">Вправо</span></button>
@@ -104,20 +104,18 @@
             <li class="tours__item">
               <picture>
                 <!-- 1х: 281px; 2x: 562px -->
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.webp">
                 <source type="image/webp" srcset="img/tour-image1-desktop@1x.webp">
 
                 <!-- 1х: 385px; 2x: 770px -->
-                <source media="(max-width: 767px)" srcset="img/tour-image1-mobile@1x.jpg">
-                <img src="img/tour-image1-desktop@1x.jpg" alt="Тур в Кавказ">
+                <img class="qw" src="img/tour-image1-desktop@1x.jpg" alt="Тур в Кавказ">
               </picture>
               <div class="tours__item-wrapper">
                 <div class="tours__notes">
-                  <a href="#" class="tours__location">Кавказ</a>
+                  <span class="tours__location">Кавказ</span>
                   <span class="tours__days">4 дня</span>
                   <span class="tours__nights">3 ночи</span>
                 </div>
-                <h3>
+                <h3 class="tours_item-title">
                   <a class="tours__link" href="#">Путешествие вокруг Эльбруса</a>
                 </h3>
                 <div class="tours__details">
@@ -126,7 +124,7 @@
                     <div class="tours__difficulty">
                       <span class="tours__level tours__level--active"></span>
                       <span class="tours__level tours__level--active"></span>
-                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active">Уровень 3</span>
                       <span class="tours__level"></span>
                       <span class="tours__level"></span>
                     </div>
@@ -146,20 +144,18 @@
             <li class="tours__item">
               <picture>
                 <!-- 1х: 281px; 2x: 562px -->
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.webp">
                 <source type="image/webp" srcset="img/tour-image2-desktop@1x.webp">
 
                 <!-- 1х: 385px; 2x: 770px -->
-                <source media="(max-width: 767px)" srcset="img/tour-image2-mobile@1x.jpg">
                 <img src="img/tour-image2-desktop@1x.jpg" alt="Тур в Алтай">
               </picture>
               <div class="tours__item-wrapper">
                 <div class="tours__notes">
-                  <a href="#" class="tours__location">Алтай</a>
+                  <span class="tours__location">Алтай</span>
                   <span class="tours__days">14 дней</span>
                   <span class="tours__nights">13 ночей</span>
                 </div>
-                <h3>
+                <h3 class="tours_item-title">
                   <a class="tours__link" href="#">Путь к подножию Белухи</a>
                 </h3>
                 <div class="tours__details">
@@ -167,7 +163,7 @@
                     <span>Сложность:</span>
                     <div class="tours__difficulty">
                       <span class="tours__level tours__level--active"></span>
-                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active">Уровень 2</span>
                       <span class="tours__level"></span>
                       <span class="tours__level"></span>
                       <span class="tours__level"></span>
@@ -188,20 +184,18 @@
             <li class="tours__item">
               <picture>
                 <!-- 1х: 281px; 2x: 562px -->
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.webp">
                 <source type="image/webp" srcset="img/tour-image3-desktop@1x.webp">
 
                 <!-- 1х: 385px; 2x: 770px -->
-                <source media="(max-width: 767px)" srcset="img/tour-image3-mobile@1x.jpg">
                 <img src="img/tour-image3-desktop@1x.jpg" alt="Тур в Адыгею">
               </picture>
               <div class="tours__item-wrapper">
                 <div class="tours__notes">
-                  <a href="#" class="tours__location">Адыгея</a>
+                  <span class="tours__location">Адыгея</span>
                   <span class="tours__days">7 дней</span>
                   <span class="tours__nights">6 ночей</span>
                 </div>
-                <h3>
+                <h3 class="tours_item-title">
                   <a class="tours__link" href="#">Через Фишт <br> к Чёрному морю</a>
                 </h3>
                 <div class="tours__details">
@@ -210,7 +204,7 @@
                     <div class="tours__difficulty">
                       <span class="tours__level tours__level--active"></span>
                       <span class="tours__level tours__level--active"></span>
-                      <span class="tours__level tours__level--active"></span>
+                      <span class="tours__level tours__level--active">Уровень 3</span>
                       <span class="tours__level"></span>
                       <span class="tours__level"></span>
                     </div>
@@ -236,12 +230,12 @@
 
         <section class="training">
           <div class="training__wrapper">
-            <h2 data-bg-training="Обучение">Обучение</h2>
+            <h2 class="page-title" data-bg-shadow="Обучение">Обучение</h2>
             <p>
               Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
             </p>
             <div class="instructors">
-              <div class="instructors__cont-pag">
+              <div class="instructors__head">
                 <h3>Наши инструкторы</h3>
                 <div class="instructors__pagination">
                   <button class="instructors__prev slick-button slick-button-prev" type="button"><span class="visually-hidden">Влево</span></button>
@@ -382,8 +376,8 @@
 
         <section class="about">
           <div class="about__wrapper">
-            <h2>О нас</h2>
-            <div class="about__history">
+            <h2 class="page-title" data-bg-shadow="О нас">О нас</h2>
+            <div>
               <h3>История компании</h3>
               <p>
                 В далеком 2000 году мы начали заниматься туризмом - походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить.
@@ -392,7 +386,7 @@
                 Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.
               </p>
             </div>
-            <div class="about__goal">
+            <div>
               <h3>Наша цель</h3>
               <p>
                 Подарить вам незабываемые впечатления от похода в горы. Мы берем на себя все организационные вопросы. При организации мы обязательно учтем все ваши пожелания. Вам остенется только наслаждаться незабываемым приключеним.
@@ -403,8 +397,8 @@
       </div>
 
       <section class="reviews">
-        <div class="reviews__cont-pag">
-          <h2 data-bg-reviews="Отзывы">Отзывы</h2>
+        <div class="reviews__head">
+          <h2 class="page-title" data-bg-shadow="Отзывы">Отзывы</h2>
           <div class="reviews__pagination">
             <button class="reviews__prev slick-button slick-button-prev" type="button"><span class="visually-hidden">Влево</span></button>
             <button class="reviews__next slick-button slick-button-next" type="button"><span class="visually-hidden">Вправо</span></button>
@@ -487,7 +481,7 @@
 
       <section class="gallery">
         <div class="gallery__top">
-          <h2 data-bg-gallery="Фотогалерея">Фотогалерея</h2>
+          <h2 class="page-title" data-bg-shadow="Фотогалерея">Фотогалерея</h2>
           <p>
             Добавляйте фото в Instagram с хэштегом <b>#лайфтур</b>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
           </p>
@@ -499,32 +493,23 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <picture>
-              <!-- 1х: 159px; 2x: 318px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/image1-mobile@1x.webp">
               <source type="image/webp" srcset="img/image1-desktop@1x.webp">
 
               <!-- 1х: 275px; 2x: 550px -->
-              <source media="(max-width: 767px)" srcset="img/image1-mobile@1x.jpg">
               <img src="img/image1-desktop@1x.jpg" alt="Фото похода">
             </picture>
           </li>
           <li class="gallery__item">
             <picture>
-              <!-- 1х: 159px; 2x: 318px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/image2-mobile@1x.webp">
               <source type="image/webp" srcset="img/image2-desktop@1x.webp">
 
               <!-- 1х: 298px; 2x: 596px -->
-              <source media="(max-width: 767px)" srcset="img/image2-mobile@1x.jpg">
               <img src="img/image2-desktop@1x.jpg" alt="Фото похода">
             </picture>
             <picture>
-              <!-- 1х: 159px; 2x: 318px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/image3-mobile@1x.webp">
               <source type="image/webp" srcset="img/image3-desktop@1x.webp">
 
               <!-- 1х: 298px; 2x: 596px -->
-              <source media="(max-width: 767px)" srcset="img/image3-mobile@1x.jpg">
               <img src="img/image3-desktop@1x.jpg" alt="Фото похода">
             </picture>
           </li>
@@ -575,24 +560,24 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Связь с нами</h2>
-          <b class="contacts__title">Остались вопросы?</b>
+          <h2>Остались вопросы?</h2>
           <p>
             <span class="contacts__carryover">Заполните форму</span> и наш оператор свяжется с вами для консультации.
           </p>
           <form class="question-form" action="#" method="GET" name="question-form">
-            <div class="question-form__name">
+            <div class="question-form__field">
               <label class="visually-hidden" for="name">Ваше имя</label>
               <input id="name" type="text" name="name" placeholder="Как к вам обращаться?" autocomplete="name" required="">
             </div>
-            <div class="question-form__phone">
+            <div class="question-form__field">
               <label class="visually-hidden" for="phone">Ваш телефон</label>
               <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel">
             </div>
-            <button class="question-form__button" type="submit">Отправить</button>
+            <button type="submit">Отправить</button>
           </form>
         </div>
       </section>
+
     </main>
 
     <footer class="main-footer">
@@ -625,7 +610,7 @@
               </ul>
             </li>
           </ul>
-          <div>
+          <div class="footer-navigation__container-phone">
             <a class="footer-navigation__phone" href="tel:88007253232">8 800 725 32 32</a>
           </div>
         </div>
@@ -665,6 +650,10 @@
 
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+      objectFitImages ();
+    </script>
 
   </body>
 
