@@ -5,6 +5,11 @@
   background-repeat: no-repeat;
   background-position-y: -132px;
   background-position-x: -2px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-about-desktop@2x.jpg");
+    background-size: 887px auto;
+  }
 }
 
 .about__wrapper {
@@ -20,6 +25,17 @@
   font-size: 14px;
   line-height: 23px;
   color: $text-color;
+}
+
+.about__title {
+  margin-left: auto;
+  margin-bottom: 50px;
+
+  max-width: 547px;
+
+  &::before {
+    content: attr(data-bg-shadow);
+  }
 }
 
 .about__wrapper h3 {
@@ -56,14 +72,20 @@
   .about {
     margin-bottom: 0;
 
-    background-image: url("../img/background-about-tablet@1x.jpg");
-    background-position-y: 16px;
-    background-position-x: 0;
+    background-position-y: -128px;
+    background-position-x: -263px;
+    background-size: 708px auto;
   }
 
   .about__wrapper {
     padding-right: 111px;
     padding-bottom: 12px;
+  }
+
+  .about__title {
+    margin-bottom: 42px;
+
+    max-width: 42.4%;
   }
 
   .about__wrapper h3 {
@@ -99,10 +121,8 @@
   .about {
     margin-bottom: 39px;
 
-    background-image: url("../img/background-about-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position-y: -173px;
-    background-position-x: left;
+    background-position-y: -170px;
+    background-position-x: -250px;
   }
 
   .about__wrapper {
@@ -110,6 +130,13 @@
     padding-top: 364px;
     padding-left: 20px;
     padding-right: 19px;
+  }
+
+  .about__title {
+    margin-right: auto;
+    margin-bottom: 45px;
+
+    max-width: 547px;
   }
 
   .about__wrapper div {

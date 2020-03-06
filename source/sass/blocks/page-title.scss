@@ -25,47 +25,6 @@
   }
 }
 
-.tours .page-title {
-  &::before {
-    content: attr(data-bg-shadow);
-  }
-}
-
-.training .page-title {
-  margin-bottom: 26px;
-
-  &::before {
-    content: attr(data-bg-shadow);
-  }
-}
-
-.about .page-title {
-  margin-left: auto;
-  margin-bottom: 50px;
-
-  max-width: 547px;
-
-  &::before {
-    content: attr(data-bg-shadow);
-  }
-}
-
-.reviews .page-title {
-  margin-bottom: 18px;
-
-  &::before {
-    content: attr(data-bg-shadow);
-  }
-}
-
-.gallery .page-title {
-  margin-bottom: 20px;
-
-  &::before {
-    content: attr(data-bg-shadow);
-  }
-}
-
 @media (max-width: $tablet-max-width) {
   .page-title {
     font-size: 25px;
@@ -79,24 +38,6 @@
       font-size: 40px;
       line-height: 49px;
     }
-  }
-
-  .training .page-title {
-    margin-bottom: 30px;
-  }
-
-  .about .page-title {
-    margin-bottom: 42px;
-
-    max-width: 42.4%;
-  }
-
-  .reviews .page-title {
-    margin-bottom: 33px;
-  }
-
-  .gallery .page-title {
-    margin-bottom: 26px;
   }
 }
 
@@ -114,28 +55,5 @@
       font-size: 30px;
       line-height: 37px;
     }
-  }
-
-  .tours .page-title {
-    max-width: 160px;
-  }
-
-  .training .page-title {
-    margin-bottom: 21px;
-  }
-
-  .about .page-title {
-    margin-right: auto;
-    margin-bottom: 45px;
-
-    max-width: 547px;
-  }
-
-  .reviews .page-title {
-    margin-bottom: 13px;
-  }
-
-  .gallery .page-title {
-    margin-bottom: 16px;
   }
 }

@@ -7,12 +7,21 @@
   margin: 0 auto;
   padding-top: 76px;
   padding-left: 122px;
+  padding-right: 102px;
 
   max-width: $desktop-max-width;
 }
 
+.training__title {
+  margin-bottom: 26px;
+
+  &::before {
+    content: attr(data-bg-shadow);
+  }
+}
+
 .training__wrapper > p {
-  margin-bottom: 58px;
+  margin-bottom: 32px;
   padding-left: 2px;
 
   width: 61%;
@@ -28,6 +37,11 @@
   .training__wrapper {
     padding-top: 112px;
     padding-left: 111px;
+    padding-right: 0;
+  }
+
+  .training__title {
+    margin-bottom: 30px;
   }
 
   .training__wrapper > p {
@@ -42,6 +56,10 @@
   .training__wrapper {
     padding-top: 89px;
     padding-left: 19px;
+  }
+
+  .training__title {
+    margin-bottom: 21px;
   }
 
   .training__wrapper > p {

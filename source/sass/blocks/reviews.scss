@@ -2,6 +2,7 @@
   margin: 0 auto;
   margin-bottom: 96px;
   padding-left: 124px;
+  padding-right: 101px;
 
   max-width: $desktop-max-width;
 
@@ -15,6 +16,14 @@
   margin-right: 20px;
 
   max-width: 1196px;
+}
+
+.reviews__title {
+  margin-bottom: 18px;
+
+  &::before {
+    content: attr(data-bg-shadow);
+  }
 }
 
 .reviews__pagination {
@@ -140,10 +149,15 @@
   .reviews {
     margin-bottom: 102px;
     padding-left: 112px;
+    padding-right: 0;
   }
 
   .reviews__head {
     margin-right: 111px;
+  }
+
+  .reviews__title {
+    margin-bottom: 33px;
   }
 
   .reviews__pagination {
@@ -159,6 +173,10 @@
 
   .reviews__head {
     margin-right: 21px;
+  }
+
+  .reviews__title {
+    margin-bottom: 13px;
   }
 
   .reviews__pagination {

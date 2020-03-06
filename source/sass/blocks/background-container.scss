@@ -3,19 +3,25 @@
   background-repeat: no-repeat;
   background-position-y: -14px;
   background-position-x: right;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-2-desktop@2x.png");
+    background-size: 547px auto;
+  }
 }
 
 @media (max-width: $tablet-max-width) {
   .background-container {
-    background-image: url("../img/background-2-tablet@1x.png");
-    background-position-y: 111px;
-    background-position-x: right;
+    background-position-y: 112px;
+    background-position-x: right -129px;
+    background-size: 423px auto;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .background-container {
-    background-image: url("../img/background-2-mobile@1x.png");
     background-position-y: 35px;
+    background-position-x: right -151px;
+    background-size: 365px auto;
   }
 }

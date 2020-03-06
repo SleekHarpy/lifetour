@@ -29,7 +29,7 @@ $(document).ready(function (){
     slidesToShow: 1,
     slidesToScroll: 2,
     variableWidth: true,
-    infinite: false,
+    infinite: true,
     prevArrow: $('.gallery__prev'),
     nextArrow: $('.gallery__next'),
   });

@@ -11,6 +11,14 @@
   color: $secondary-color;
 }
 
+.gallery__title {
+  margin-bottom: 20px;
+
+  &::before {
+    content: attr(data-bg-shadow);
+  }
+}
+
 .gallery__top p {
   margin-bottom: 45px;
 
@@ -47,6 +55,10 @@
     padding-left: 110px;
   }
 
+  .gallery__title {
+    margin-bottom: 26px;
+  }
+
   .gallery__top p {
     margin-bottom: 35px;
 
@@ -68,6 +80,10 @@
     padding-left: 21px;
   }
 
+  .gallery__title {
+    margin-bottom: 16px;
+  }
+
   .gallery__top p {
     margin-bottom: 33px;
 
@@ -87,5 +103,11 @@
 
     object-fit: cover;
     font-family: "object-fit: cover";
+  }
+
+  .gallery__item {
+    &--more img {
+      width: 171px;
+    }
   }
 }

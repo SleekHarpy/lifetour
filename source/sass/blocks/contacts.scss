@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-contacts-desktop@2x.jpg");
+  }
 }
 
 .contacts__wrapper {
@@ -40,6 +44,10 @@
   margin-bottom: 44px;
 
   text-shadow: 0 0 5px $text-color;
+}
+
+.contacts__carryover {
+  display: none;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -90,8 +98,7 @@
   }
 
   .contacts__carryover {
-
-    padding: 30px;
+    display: block;
   }
 }
 

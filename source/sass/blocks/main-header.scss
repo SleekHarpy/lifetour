@@ -1,11 +1,14 @@
 .main-header {
-  min-height: 53.3vw;
-
   background-color: $background-color;
-  background-image: url("../img/background-cloud-ad-desktop@1x.png"), url("../img/background-ad-desktop@1x.jpg");
+  background-image: url("../img/background-cloud-intro-desktop@1x.png"), url("../img/background-intro-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom, 0 2px;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-cloud-intro-desktop@2x.png"), url("../img/background-intro-desktop@2x.jpg");
+    //background-size: 1440px auto;
+  }
 }
 
 .main-header__wrapper {
@@ -14,6 +17,7 @@
   padding-left: 120px;
   padding-right: 120px;
 
+  min-height: 53.3vw;
   max-width: $desktop-max-width;
 }
 
@@ -83,9 +87,8 @@
 
 @media (max-width: $tablet-min-width) {
   .main-header {
-    background-image: url("../img/background-cloud-ad-tablet@1x.png"), url("../img/background-ad-tablet@1x.jpg");
-    background-position: bottom, 0 0;
-    background-size: cover;
+    background-position: bottom, -222px;
+    background-size: contain, 1168px auto;
   }
 }
 
@@ -105,8 +108,7 @@
 
 @media (max-width: $mobile-min-width) {
   .main-header {
-    background-image: url("../img/background-cloud-ad-mobile@1x.png"), url("../img/background-ad-mobile@1x.jpg");
-    background-position: bottom, 0 0;
-    background-size: contain, cover;
+    background-position: bottom, -351px;
+    background-size: contain, 880px auto;
   }
 }

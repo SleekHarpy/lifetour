@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding-top: 49px;
   padding-left: 121px;
+  padding-right: 123px;
 
   max-width: $desktop-max-width;
 
@@ -14,6 +15,12 @@
   margin-bottom: 50px;
 
   max-width: 1196px;
+}
+
+.tours__title {
+  &::before {
+    content: attr(data-bg-shadow);
+  }
 }
 
 .tours__link {
@@ -184,8 +191,6 @@
   margin-right: 42px;
 
   display: flex;
-
-  font-size: 0;
 }
 
 .tours__level {
@@ -222,7 +227,6 @@
 
 .tours__button {
   position: relative;
-  margin-right: 125px;
   padding-right: 16px;
 
   font-weight: bold;
@@ -258,6 +262,7 @@
   .tours {
     padding-top: 59px;
     padding-left: 113px;
+    padding-right: 0;
   }
 
   .tours__head {
@@ -287,6 +292,10 @@
   .tours__head {
     margin-right: 20px;
     margin-bottom: 22px;
+  }
+
+  .tours__title {
+    max-width: 160px;
   }
 
   .tours__pagination {
