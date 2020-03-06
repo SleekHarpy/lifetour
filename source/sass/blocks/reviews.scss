@@ -34,10 +34,11 @@
 
 .reviews__list {
   margin: 0;
+  margin-right: -101px;
   padding: 10px;
   transform: translateX(-10px);
 
-  max-width: 1240px;
+  max-width: 1230px;
 
   list-style: none;
 }
@@ -162,6 +163,10 @@
 
   .reviews__pagination {
     top: 0;
+  }
+
+  .reviews__list {
+    margin-right: 0;
   }
 }
 

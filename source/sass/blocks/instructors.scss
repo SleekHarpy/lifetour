@@ -27,10 +27,11 @@
 .instructors__list {
   transform: translateX(-11px);
   margin: 0;
+  margin-right: -122px;
   padding-left: 16px;
   padding: 10px;
 
-  max-width: 1230px;
+  max-width: 1210px;
 
   list-style: none;
 }
@@ -109,6 +110,10 @@
 
   .instructors__pagination {
     top: 0;
+  }
+
+  .instructors__list {
+    margin-right: 0;
   }
 }
 

@@ -46,7 +46,7 @@
   text-shadow: 0 0 5px $text-color;
 }
 
-.contacts__carryover {
+.contacts__wrapper br {
   display: none;
 }
 
@@ -97,7 +97,7 @@
     width: 218px;
   }
 
-  .contacts__carryover {
+  .contacts__wrapper br {
     display: block;
   }
 }
